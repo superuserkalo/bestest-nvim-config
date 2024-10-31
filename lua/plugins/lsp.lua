@@ -1,6 +1,7 @@
 return {
   {
     'neovim/nvim-lspconfig',
+    event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       'williamboman/mason.nvim',           -- Manages external editor tooling (LSP servers, formatters, etc.)
       'williamboman/mason-lspconfig.nvim', -- Bridges mason.nvim with nvim-lspconfig
